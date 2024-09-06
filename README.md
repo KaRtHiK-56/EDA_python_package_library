@@ -1,1 +1,1 @@
-# EDA_python_package_library
+# Structured Prepocessing library
