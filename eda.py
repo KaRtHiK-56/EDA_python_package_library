@@ -19,7 +19,6 @@ path = input("Please enter the path of your csv file: ")
 
 df = pd.read_csv(path)
 
-
 class Inspection:
     """
     Inspection class used to inspect and summarize key statistics and information about a given DataFrame.
