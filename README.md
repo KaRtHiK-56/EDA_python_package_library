@@ -45,7 +45,6 @@ Clone this repository to your local machine and ensure you have Python installed
 
 ```bash
 git clone https://github.com/KaRtHiK-56/EDA_python_package_library
-cd preprocessing-pipeline
 pip install -r requirements.txt
 ```
 

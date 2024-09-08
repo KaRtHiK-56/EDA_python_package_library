@@ -1,9 +1,8 @@
 from setuptools import setup, find_packages
 
 
-with open(r"C:\Users\Devadarsan\Desktop\Karthik_projects\EDA_Package\EDA_python_package_library\README.md", "r") as f:
+with open("README.md", "r") as f:
     long_description = f.read()
-
  
 classifiers = [
   'Development Status :: 5 - Production/Stable',
@@ -14,10 +13,11 @@ classifiers = [
 ]
  
 setup(
-  name='edapython',
-  version='0.0.2.3',
+  name='eda-python-library',
+  version='0.0.1.6',
   description='A Library for Making the Explorartory Data Analysis process easy in single line of codes',
-  long_description=long_description,
+  #long_description=long_description,
+  #long_description_content_type='text/markdown',
   url="https://github.com/KaRtHiK-56/EDA_python_package_library",  
   author='Karthik',
   author_email='karthiksurya611@gmail.com',
