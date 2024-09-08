@@ -54,23 +54,19 @@ pip install -r requirements.txt
 
 The inspection methods provide a detailed overview of your dataset to identify data quality issues upfront.
 
+### REFER TO PackageTest.ipynb FOR SAMPLE EXAMPLE
+https://github.com/KaRtHiK-56/EDA_python_package_library
+
+
 ```python
-# Import the InitialInspection class and create an instance with your DataFrame
-from eda import Inspection
+!pip install eda-python-library==0.0.1.8
 
-# Sample DataFrame
-import pandas as pd
+# Import the eda library
+from eda.eda import Inspection
+# This will ask you to enter the path of the csv file and then generated the initial inspection.
 
-data = {
-    'col1': [1, 2, np.nan, 4],
-    'col2': ['A', 'B', 'A', 'B'],
-    'col3': [pd.Timestamp('20220101'), pd.Timestamp('20220102'), pd.Timestamp('20220103'), pd.Timestamp('20220104')]
-}
-
-df = pd.DataFrame(data)
-
-# Create an instance of Inspection
-Inspection.Inspect()
+Inspection.inspect()
+#This will generate the initail inspection report for teh dataset
 ```
 
 ### Handling Missing Values
@@ -79,10 +75,10 @@ Handle missing values using different strategies like mean, median, mode, bfill,
 
 ```python
 # Import and use the MissingValueHandler class
-from eda import MissingValueHandler
+from eda.eda import MissingValueHandler
 
 MissingValueHandler.mean('col1')
-MissingValueHandler.bfill('col3')
+MissingValueHandler.b_fill('col3')
 ```
 
 ### Data Type Conversion
@@ -91,7 +87,7 @@ Convert data types using the `DataTypeConverter` class, which supports conversio
 
 ```python
 # Import and use the DataTypeConverter class
-from eda import DataTypeConverter
+from eda.eda import DataTypeConverter
 
 converter = DataTypeConverter(df)
 converter.to_string('col2')
@@ -104,7 +100,7 @@ Handle outliers using IQR and Z-score methods.
 
 ```python
 # Import and use the OutlierHandler class
-from eda import OutlierHandler
+from eda.eda import OutlierHandler
 
 OutlierHandler.iqr_capping('col1')
 ```
@@ -115,9 +111,9 @@ Scale numerical data using Standard Scaler, Robust Scaler, or Normalizer.
 
 ```python
 # Import and use the ScalingHandler class
-from eda import NumericalScaler
+from eda.eda import NumericalScaler
 
-NumericalScaler.standard_scaler('col1')
+NumericalScaler.standardscaler('col1')
 ```
 
 ### Variable Transformation
@@ -126,7 +122,7 @@ Transform variables using binning, log transformation, and encoding methods.
 
 ```python
 # Import and use the VariableTransformation class
-from eda import VariableTransformation
+from eda.eda import VariableTransformation
 
 VariableTransformation.binner('col1', bins=[0, 1, 2, 3, 4])
 VariableTransformation.label_encoding('col2')
@@ -140,7 +136,7 @@ VariableTransformation.label_encoding('col2')
 
 ### 2. `MissingValueHandler`
 - **Methods**:
-  - `mean()`, `median()`, `mode()`, `bfill()`, `ffill()` ,`linear()`, `polynomial()`, `drop()`: Various techniques to handle missing values in the dataset.
+  - `mean()`, `median()`, `mode()`, `b_fill()`, `f_fill()` ,`linear()`, `polynomial()`, `drop()`: Various techniques to handle missing values in the dataset.
 
 ### 3. `DataTypeConverter`
 - **Methods**:

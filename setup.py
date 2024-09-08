@@ -14,10 +14,10 @@ classifiers = [
  
 setup(
   name='eda-python-library',
-  version='0.0.1.6',
+  version='0.0.1.8',
   description='A Library for Making the Explorartory Data Analysis process easy in single line of codes',
-  #long_description=long_description,
-  #long_description_content_type='text/markdown',
+  long_description=long_description,
+  long_description_content_type='text/markdown',
   url="https://github.com/KaRtHiK-56/EDA_python_package_library",  
   author='Karthik',
   author_email='karthiksurya611@gmail.com',
