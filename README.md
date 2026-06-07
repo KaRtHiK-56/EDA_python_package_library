@@ -39,6 +39,20 @@ Handling raw data can be challenging due to missing values, inconsistent data ty
 - **Scaling**: Standardizes numerical data using Standard Scaler, Robust Scaler, and Normalizer techniques.
 - **Variable Transformation**: Provides transformations like binning, log transformation, square root transformation, label encoding, and one-hot encoding.
 
+## 📈 EDA Python Library Analytics
+
+Developed and published an Exploratory Data Analysis (EDA) Python library and tracked its adoption using ClickPy analytics.
+
+### Key Metrics Monitored
+- Total package downloads
+- Download growth trends
+- Python version adoption
+- Geographic distribution
+- Package popularity over time
+
+🔗 Live Analytics Dashboard:
+https://clickpy.clickhouse.com/dashboard/eda-python-library
+
 ## Installation
 
 Clone this repository to your local machine and ensure you have Python installed along with the required dependencies:
